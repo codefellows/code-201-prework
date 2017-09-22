@@ -28,7 +28,7 @@ Once you've verified that your `atom` shell command is functional, run the follo
 - `apm install open-in-browser minimap highlight-selected linter linter-eslint tree-view-git-status file-icons`
 
 This will install the following packages:
-1. Open In Browser: `ctrl-alt-q` hotkey to open your HTML page in the browser from Atom
+1. Open In Browser: `command-shift-q` hotkey to open your HTML page in the browser from Atom
 2. Mini-Map: Installs a mini map (useful for seeing your code at a high level) in the right hand column of the editor window
 3. Highlight Selected: Highlights all instances of a word or phrase when one instance in double-clicked or cursor-highlighted
 
