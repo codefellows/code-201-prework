@@ -56,4 +56,13 @@ If Homebrew is not installed, you will see something like:
 
 `-bash: brew: command not found `
 
+### Install Tree Command.
+
+Now that Brew is installed we can use it to install a quick awesome command line tool called `tree`!
+
+What Tree does is allows us to display the entire file structure of current directory! It's a nice quick view that helps us see where everything is at a glance.
+
+Type `brew install tree`, then once that's done type in the command `tree` to show the tree view of your current directory! You may need to restart your terminal in order to get it to work.
+
+
 ### [⇐ Previous](1_terminal.md) | [Next ⇒](3_vscode.md)
