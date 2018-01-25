@@ -23,7 +23,7 @@ Start on the pre-work as soon as you can and be sure to allow yourself plenty of
 1. HTML, CSS, and Javascript tutorials from Khan Academy *(estimated at 15-40 hours)*
 1. Complete the textbook readings for Day 1 of class *(2-3 hours)*
 1. Download and Install Slack *(15-30 minutes)*
-1. Complete the assigned Career Coaching assignments *(1-3 hours)*
+1. Complete the assigned Career Coaching assignments *(2-3 hours)*
 
 **Total estimated time for pre-work Steps 3-10: 25 to 57 hours of working time (not counting breaks)**
 
