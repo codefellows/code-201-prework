@@ -2,7 +2,13 @@
 
 Now it's time to install VSCode Text Editor, a sophisticated text editor for code, markup, and prose.
 
-To get started, download [VSCode](https://code.visualstudio.com/download), and after it is installed, launch the application.
+To get started, download [VSCode](https://code.visualstudio.com/download). **As you finish downloading, it is critical that you go through installation following these steps, in exactly this order:**
+
+1. Download the .zip file.
+2. Double-click the .zip file (or click the downloaded file at the bottom of Chrome) to extract the shiny VS Code app.
+3. Drag the shiny VS Code app into your Applications folder.
+4. Open the app. (If you opened the app before it was in your Applications folder, you'll need to reinstall.)
+5. (optional) Add the app to the Dock.
 
 [VSCode's documentation](https://code.visualstudio.com/docs) is excellent. Review it now to familiarize yourself with the basics.
 
