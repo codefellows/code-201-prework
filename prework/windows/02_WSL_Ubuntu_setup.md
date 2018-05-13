@@ -2,11 +2,12 @@
 
 Before you begin check to make sure that you have the [most recent version of Windows 10](https://support.microsoft.com/en-us/help/4028685/windows-10-get-the-update).
 
+This section will help you to enable the WSL feature in Windows, and then to install and setup the Ubuntu App from the Microsoft store. 
+
 ## Install Instructions:
 
-**Please read through these step once before starting!**
+### Please read through these step once before starting!
 
----
 ### 1. Enable WSL Feature in Windows.
 
 1. Right click on the start menu and click on s\Settings.
@@ -29,9 +30,9 @@ This will install the needed files. Follow any directions that pop up and restar
 
 ### 4. Updating Default Software.
 
-NOTE: This can take some time, about 10-30 minutes. It is recommended you do it now, if you have the time, but you can also wait until the end of this doc to do this as well. There will be a reminder at the end.
+**NOTE**: This can take some time, about 10-30 minutes. It is recommended you do it now, if you have the time, but you can also wait until the end of this doc to do this as well. There will be a reminder at the end.
 
-Ubuntu is shipped with some default software that has likely had more recent updates come out. Ubuntu uses apt ( Advanced Packageing Tool) to maintain all of it's packages. Think of it like Windows update, the App Store, and a Public library all in one. We need to use apt to update ( update all it's packages) and then tell it to upgrade them ( actually update the current versions)
+Ubuntu is shipped with some default software that has likely had more recent updates come out. Ubuntu uses apt ( Advanced Packaging  Tool) to maintain all of it's packages. Think of it like Windows update, the App Store, and a Public library all in one. We need to use apt to update ( update all it's packages) and then tell it to upgrade them ( actually update the current versions)
 
 1. Type `sudo apt-get update`.
 1. Once that is complete, type `sudo apt-get upgrade`. Press `y` when prompted. 
@@ -39,10 +40,10 @@ Ubuntu is shipped with some default software that has likely had more recent upd
 
 ### Learning your File Systems
 
-At this point you are now totally ready to start developing on your machine using the Ubuntu app as your POSIX env! It is recommended that you use the Ubuntu FS for installing and running software and the Windows FS for everything else.
+At this point you are now totally setup with WSL and the Ubuntu app. The rest of this guide will spend time talking about best practices, workflow, and other important info!
 
 **Important!!**
 
-It is also highly recommended you at least read through the next section as it talks about the very important differences between the Windows FS and the Ubuntu FS! 
+It is also highly recommended you read through at least the next section as it talks about the very important differences between the Windows FS and the Ubuntu FS! 
 
 [Click Here](./03_understanding_the_file_systems.md) to learn more about the two File Systems.

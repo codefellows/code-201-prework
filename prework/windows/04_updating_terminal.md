@@ -15,8 +15,8 @@ IE: about_me[monday-lab x!+]$
 In order to change how your terminal looks, we need to add some code to a file that lives in your root Ubuntu user's root directory.
 
 1. Open the Ubuntu app and type `ls -a`. You should see a .profile file there. If not, then type `sudo touch .profile`.
-2. Type `sudo nano .profile`. This will open the file in the commandline editor nano.
-3. Copy this code then paste it into the nano editor. You can paste with right-click:
+2. Type `sudo nano .profile`. This will open the file in the command line editor nano.
+3. Delete anything that's in the file, then copy and paste this code into the editor. You can paste with right-click:
 
 ```
 # get current branch in git repo
@@ -77,10 +77,15 @@ export PS1="\[\e[m\]\[\e[36m\]\W\[\e[m\]\[\e[33m\]\`parse_git_branch\`\\$ "
 
 
 # This allows you to switch between the Ubuntu root and your Windows Root.
-alias cd~='cd ~/../../mnt/c/Users/<Windows Username>/'
+
+# wr evaluates to the absolute path to your Windows user's root.
+export wr='~/../../mnt/c/Users/<Windows Username>/'
+
+# This gives us a quick way of moving directly to the Windows root
+alias cdwr='cd $wr'
 
 # This brings you to your Windows Working directory immediatly when you open a new terminal.
-cd~
+cdwr
 
 ```
 
@@ -92,10 +97,23 @@ And you're done!
 
 ### Extra Info
 
-1. In the file you pasted there was a line at the bottom that started with alias. What this does is adds a unique command to your terminal. Now when you type `cd~` it will bring you to the root of your Windows User! This makes navigating between the two file systems super easy. 
+1. In the file you pasted there was a section at the bottom that exports `wr` and sets up the `cdwr` alias. What this does is adds a unique variable and a command to your terminal.
 
-- To navigate to the Ubuntu root, you will type the normal `cd ~`. That one comes with a space.
-- To navigate to the Windows Root, you will type `cd~` with NO space!.
+- **$wr :**
+
+If you want to use a relative path, but don't want to go all the way up to the Ubuntu FS and then work down to the Windows FS, you can use the `$wr` variable as a shortcut to the Windows root instead. IE: 
+
+`cd $wr/about_me/scripts`. Instead of:
+
+`cd ~/../../mnt/c/Users/MTreat/Development/about_me/scripts`
+
+This also works with tab completion as well, which is awesome.
+
+- **cdwr :**
+Now when you type `cdwr` it will bring you to the root of your Windows User! This makes navigating between the two file systems super easy. 
+
+- To navigate to the Ubuntu root, you will type the normal `cd ~`.
+- To navigate to the Windows Root, you will type `cdwr` with NO space!.
 
 2. If you decide to add a directory to your Windows User's root to hold all of your work, IE: `/Users/MichaelLeonTreat/Development`, you can come back to this file and update the line with the `cd~` alias so that it moves directly into that directory. Just add the name of the directory to the end of the path after your username.
 
@@ -103,7 +121,7 @@ And you're done!
 
 `C:\Users\<user>\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs`
 
-4. If you want to create your own custom commandline prompt you can check out [bashrcgenerator.com](bashrcgenerator.com) or [ezprompt.net](ezprompt.net) and use the code that provide instead of the code here. 
+4. If you want to create your own custom command line prompt you can check out [bashrcgenerator.com](bashrcgenerator.com) or [ezprompt.net](ezprompt.net) and use the code that provide instead of the code here. 
 
 
 ### Installing Software
