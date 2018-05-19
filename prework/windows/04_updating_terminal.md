@@ -2,9 +2,9 @@
 
 This section will talk about how to update the Terminal's look and feel, as well as how to edit files in Ubuntu through it's command line editor nano.
 
-Typically you will always be working in the Windows FS, but for this task we need edit a file that lives on the Ubuntu FS. This means that we need to use nano to update the file, since Windows cannot update the Ubuntu file without causing errors.
+Typically you will always be working in the Windows FS, but for this task we need to edit a file that lives on the Ubuntu FS. This means that we need to use nano to update the file, since Windows cannot update the Ubuntu file without causing errors.
 
-At the end, this will add some coloring to your command line, and you command line will be formatted like this:
+At the end, this will add some color to your command line, and your command line will be formatted like this:
 
 `WorkingDirectory[GitBranch GitStatus]$`
 
@@ -12,10 +12,10 @@ IE: about_me[monday-lab x!+]$
 
 ### Updating the .profile file
 
-In order to change how your terminal looks, we need to add some code to a file that lives in your root Ubuntu user's root directory.
+In order to change how your terminal looks, we need to add some code to a file that lives in your Ubuntu user's root directory.
 
 1. Open the Ubuntu app and type `ls -a`. You should see a .profile file there. If not, then type `sudo touch .profile`.
-2. Type `sudo nano .profile`. This will open the file in the command line editor nano.
+2. Type `sudo nano .profile`. This will open the file in the command line editor Nano.
 3. Delete anything that's in the file, then copy and paste this code into the editor. You can paste with right-click:
 
 ```
@@ -110,22 +110,23 @@ If you want to use a relative path, but don't want to go all the way up to the U
 This also works with tab completion as well, which is awesome.
 
 - **cdwr :**
+
 Now when you type `cdwr` it will bring you to the root of your Windows User! This makes navigating between the two file systems super easy. 
 
 - To navigate to the Ubuntu root, you will type the normal `cd ~`.
-- To navigate to the Windows Root, you will type `cdwr` with NO space!.
+- To navigate to the Windows Root, you will type `cdwr` with NO space!
 
-2. If you decide to add a directory to your Windows User's root to hold all of your work, IE: `/Users/MichaelLeonTreat/Development`, you can come back to this file and update the line with the `cd~` alias so that it moves directly into that directory. Just add the name of the directory to the end of the path after your username.
+2. If you decide to add a directory to your Windows User's root to hold all of your work, IE: `/Users/MichaelLeonTreat/Development`, you can come back to this file and update the `export wr` line so that it moves directly into that directory. Just add the name of the directory to the end of the path after your username.
 
 3. In case you ever need it, the Ubuntu FS lives on your Windows FS on the path that looks very similar to this:
 
 `C:\Users\<user>\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs`
 
-4. If you want to create your own custom command line prompt you can check out [bashrcgenerator.com](bashrcgenerator.com) or [ezprompt.net](ezprompt.net) and use the code that provide instead of the code here. 
+4. If you want to create your own custom command line prompt you can check out [bashrcgenerator.com](bashrcgenerator.com) or [ezprompt.net](ezprompt.net) and use the code that provides instead of the code here. 
 
 
 ### Installing Software
 
-Before we can dive in and start coding, we should add in some sotware that will help us streamline the entire process. This next section will explain how to install 3 very common pieces of software, and will also cover the different situations you may encounter while using the 2 File Systems.
+Before we can dive in and start coding, we should add in some software that will help us streamline the entire process. This next section will explain how to install 3 very common pieces of software, and will also cover the different situations you may encounter while using the two File Systems.
 
 [Click Here](05_VSCode_Node_GIt_install.md) to move to the next section!
