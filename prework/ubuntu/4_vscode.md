@@ -43,7 +43,7 @@ It will take a few minutes for the download and installation process to complete
 
 Now let's verify that it is installed. Enter the following into your terminal:
 
-`node -e 'console.log("works")'`
+`nodejs -e 'console.log("works")'`
 
 You should get a response that says "works". If not, try reinstalling Node again. If you are still having issues, please contact your instructor.
 
