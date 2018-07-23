@@ -92,8 +92,9 @@ The final step here is to add your email and name to the Git config. This will a
 
 1. Type `git config --global user.email 'your email here in single quotes'`.
 1. Type `git config --global user.name 'Your Name In Single Quotes'`.
+1. Type `git config --global core.editor nano`. (If you're a fan of `emacs` or `vim`, feel free to use that as your default editor instead of `nano`.)
 
-Once you are done, type `git config -l` and verify that it has your name and email saved correctly.
+Once you are done, type `git config -l` and verify that it has your name, email, and editor saved correctly.
 
 ### Wrapping up
 

@@ -76,6 +76,9 @@ export PS1="\[\e[m\]\[\e[36m\]\W\[\e[m\]\[\e[33m\]\`parse_git_branch\`\\$ "
 # Nothing below here will change how your terminal looks, rather, it will change some things about how it works.
 
 
+# This allows you to open html files in Chrome more easily by typing "chrome filename".
+alias chrome="/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe"
+
 # This allows you to switch between the Ubuntu root and your Windows Root.
 
 # wr evaluates to the absolute path to your Windows user's root.

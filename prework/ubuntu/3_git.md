@@ -31,6 +31,7 @@ Make sure you sign up for an account at Github <a href="https://github.com" targ
 ```
 git config --global user.name 'YOUR FULL NAME'
 git config --global user.email 'YOUR EMAIL ADDRESS'
+git config --global core.editor nano
 ```
 
 The terminal does not send success messages, in order to double check that you have successfully assigned your username and email:
@@ -39,11 +40,12 @@ The terminal does not send success messages, in order to double check that you h
 git config --list
 ```
 
-Your terminal should output the following lines:
+Your terminal should output the following lines, among others:
 
 ```
 user.email='YOUR EMAIL ADDRESS'
 user.name='YOUR FULL NAME'
+core.editor=nano
 ```
 
 
