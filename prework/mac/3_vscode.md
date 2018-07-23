@@ -53,7 +53,7 @@ You should get a response that says "works". If not, try reinstalling Node again
 
 Now that you have Node installed, you can install Node packages using its package manager, **NPM**. Open your terminal (Git Bash on Windows) and enter:
 
-`npm -g i eslint git-open`
+`npm -g i eslint git-open live-server`
 
 You should see a lot of feedback as it installs.
 
