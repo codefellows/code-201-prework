@@ -15,7 +15,7 @@ After some setup, this gives you a native POSIX / Unix-like environment that you
 
 _**However**_, there are a few caveats:
  
-1. The Subsystem does not have access to a GUI, so it cannot run any programs that need one, IE: browser, editor. It is strictly a command line. ( Technically this isn't 100% true. It can have access to the Windows GUI, but it is not recommended at the moment.)
+1. The Subsystem does not have access to a GUI, so it cannot run any programs that need one, IE: browser, editor. It is strictly a command line. (Technically this isn't 100% true. It can have access to the Windows GUI, but it is not recommended at the moment.)
 
 1. **You cannot edit the Subsystem's files through Windows or any Windows apps**. The Subsytem however can edit both Windows files and it's own files just fine though. 
  
