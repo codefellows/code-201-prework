@@ -34,7 +34,9 @@ JavaScript was initially  run client-side in the browser, but the with addition 
 
 You will be using Node.js to add tools, libraries, and frameworks to your projects, and you will also use it as a REPL environment for working on your code.
 
-We will be installing Node.js through the Ubuntu Command Line Interface, using Ubuntu's apt. We are installing it on the Ubuntu FS because it is software that does not need a GUI and we want it to run in a POSIX environment. Having said that, it is likely you will never have a problem running Node if you install it through Windows as well, but it is recommended that you try to stick to this pattern of installing as much of your software onto Ubuntu as possible, and only installing it through Windows when necessary, as this may save you from potential POSIX problems in the future.
+### Node on Ubuntu
+
+We will be installing Node.js through the Ubuntu Command Line Interface, using Ubuntu's apt. We are installing it on the Ubuntu FS because it is software that does not need a GUI and we want it to run in a POSIX environment.
 
 1. Open the Ubuntu app and type `cd ~` to bring you into the Ubuntu FS.
 1. Type `sudo apt-get update`. This will tell Ubuntu's apt tool to update.
@@ -47,12 +49,18 @@ sudo apt-get install -y nodejs
 The first line will handle getting everything ready. 
 The second line will show up once the first line has finished. Press enter when the second line shows up in your terminal.
 
-### Verify Node Installation
+### Verify Node on Ubuntu
 
-1. Close and re-open the app.
+1. Close and re-open the Ubuntu app.
 2. Type `node -e 'console.log("works")'`
 3. If you get a response back that says `works` then you're all good to go!
 
+### Node on Windows
+
+We will also install Node on Windows, as you'll need the ability to use Node on Windows in order to install tools that VSCode uses. Since VSCode is a Windows app, it can't use tools we install with Node on Ubuntu; we have to use Node on Windows.
+
+1. Visit https://nodejs.org/en/download/ and download and run the Windows installer.
+2. Open Windows PowerShell (NOT Ubuntu) and run `npm i -g eslint`.
 
 ## Git
 
