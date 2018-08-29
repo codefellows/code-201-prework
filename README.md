@@ -71,9 +71,11 @@ One significant aspect of creating software is interacting directly with text fi
 
 If you aren't already, this is a great time to get used to the command line. No matter which operating system you're using, this tutorial can help you feel confident using the command line to navigate your computer:
 
-[http://linuxtutorial.todolistme.net](http://linuxtutorial.todolistme.net)
+[https://ryanstutorials.net/linuxtutorial](https://ryanstutorials.net/linuxtutorial)
 
-Please work through sections 1 through 5 of the Linux tutorial. Also recommended: 7 and 8. Feel free to explore the more advanced topics if you wish, but those topics are beyond the scope of the Code 201 course!
+Please work through Sections 1 through 5 of this tutorial. Note: This tutorial is for everyone, even though the word "Linux" is in the title! The same commands work in Windows and MacOS terminals as well.
+
+Also recommended from this tutorial: Section 14, which is a handy cheatsheet of commands. Feel free to explore the more advanced topics if you wish, but those topics are beyond the scope of the Code 201 course!
 
 Using the terminal may feel a little scary at first, but stick with it and give it some practice. This is you, in charge of your computer. :]
 
