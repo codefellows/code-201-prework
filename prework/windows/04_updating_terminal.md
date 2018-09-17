@@ -76,16 +76,13 @@ export PS1="\[\e[m\]\[\e[36m\]\W\[\e[m\]\[\e[33m\]\`parse_git_branch\`\\$ "
 # Nothing below here will change how your terminal looks, rather, it will change some things about how it works.
 
 
-# This allows you to open html files in Chrome more easily by typing "chrome filename".
-alias chrome="/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe"
-
 # This allows you to switch between the Ubuntu root and your Windows Root.
 
 # wr evaluates to the absolute path to your Windows user's root.
 export wr=~/../../mnt/c/Users/<Windows Username>/
 
 # This gives us a quick way of moving directly to the Windows root
-alias cdwr='cd $wr'
+alias cdwr='cd "$wr"'
 
 # This brings you to your Windows Working directory immediatly when you open a new terminal.
 cdwr
@@ -93,6 +90,8 @@ cdwr
 ```
 
 4. After pasting that in, you will need to add your Windows username right after `/Users/`. IE: `/Users/MichaelLeonTreat/`.
+
+4a. If your path has a space, you can use an backslash escape character to include the space. IE: `/Users/Michael\ Treat/`.
 
 5. After that you're done in this editor, so press `ctrl + x` at the same time to quit. It will ask if you want to save changes. Hit `y` and the editor will save your changes. It will then ask what to name the file. Just hit enter to keep the same name. 
 
@@ -125,7 +124,7 @@ Now when you type `cdwr` it will bring you to the root of your Windows User! Thi
 
 `C:\Users\<user>\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs`
 
-4. If you want to create your own custom command line prompt you can check out [bashrcgenerator.com](bashrcgenerator.com) or [ezprompt.net](ezprompt.net) and use the code that provides instead of the code here. 
+4. If you want to create your own custom command line prompt you can check out [bashrcgenerator.com](http://bashrcgenerator.com) or [ezprompt.net](http://ezprompt.net) and use the code that provides instead of the code here. 
 
 
 ### Installing Software
