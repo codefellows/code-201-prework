@@ -44,10 +44,10 @@ If you are completely new to coding, consider completing <a href="https://www.co
   - [Ubuntu](prework/ubuntu/1_terminal.md)
   - [Windows](prework/windows/01_preface.md)
 
-Following completion of these Pre-work assignments, you should:
- - Have a terminal with a Git compatible prompt
- - Be able to receive a valid response when typing "git --version"
- - Be able to open VSCode from the Terminal or Git Bash.
+Following completion of these Pre-work assignments, students should:
+ - Have a terminal with a Git compatible prompt.
+ - Be able to receive a valid response when typing "git --version" in their Terminal or Ubuntu app.
+ - Be able to open VSCode from the Terminal or Ubuntu app on their computer.
 
 ##### 4. Purchase the required textbooks *(15-30 minutes)*
 
