@@ -1,0 +1,67 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* OVERRIDES: */
+
+body {
+  font-family: 18px/28px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #F0F0F0;
+}
+section {
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.09);
+}
+nav {
+  top: 1em;
+}
+nav ul a:hover {
+  color: #2882d1;
+}
+section {
+  margin-top: 1em;
+}
+ul {
+  list-style: disc;
+}
+ol ol ol {
+  margin-bottom: 0;
+}
+code.highlighter-rouge {
+  font-family: 'Lucida Sans', Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  font-size: 13px;
+  color: #cc3524;
+  text-shadow: unset;
+  margin: 0 4px;
+  font-weight: bold;
+  padding: 2px 6px;
+  background: #F0F0F0;
+  border-radius: 2px;
+  border-bottom: 1px solid #cc3524;
+  border-right: 1px solid #cc3524;
+}
+td:first-child {
+  border-left: 1px solid #e5e5e5;
+}
+td {
+  text-align: left;
+  padding: 5px 10px;
+  border-bottom: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
+}
+a {
+  color: #2882d1;
+  font-weight: 400;
+  text-decoration: none;
+}
+h1:before {
+  content: url("https://images.ctfassets.net/qjy3jg1udcmq/2K2HAuqROgsOc8Emcmec44/dd756e36dd9ecc87dc683d0559a8f49d/code-fellows-logo-shield.png");
+  float: right;
+}
+blockquote {
+  border-left: 1px solid #cc3524;
+}
+a:hover, a:active {
+    outline: 0;
+    text-decoration: underline;
+}
