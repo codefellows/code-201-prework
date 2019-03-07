@@ -47,4 +47,4 @@ The work flow is also extremely simple as you are just working in a terminal lik
 
 ## Getting Started
 
-[Setting up WSL and the Ubuntu App](./02_WSL_Ubuntu_setup.md)
+### [Next ⇒](./02_WSL_Ubuntu_setup.md)

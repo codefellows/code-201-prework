@@ -47,4 +47,4 @@ At this point you are now totally setup with WSL and the Ubuntu app. The rest of
 
 It is highly recommended you read through the next section, _at least_, as it talks about the very important differences between the Windows FS and the Ubuntu FS.
 
-[Click Here](./03_understanding_the_file_systems.md) to learn more about the two File Systems.
+### [⇐ Previous](./02_WSL_Ubuntu_setup.md) | [Next ⇒](./03_understanding_the_file_systems.md)

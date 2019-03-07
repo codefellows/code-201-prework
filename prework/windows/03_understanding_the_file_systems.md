@@ -33,4 +33,4 @@ In the off chance that you do need to edit a Ubuntu file then you should use the
 
 ### Updating your Terminal
 
-Click [Next](04_updating_terminal.md) to update your Terminal's look and feel! 
+### [⇐ Previous](./03_understanding_the_file_systems.md) | [Next ⇒](./04_updating_terminal.md)

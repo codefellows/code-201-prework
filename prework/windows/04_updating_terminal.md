@@ -138,4 +138,4 @@ Type `sudo apt install tree`. Once that's done, you can type `tree` to see the t
 
 Before we can dive in and start coding, we should add in some software that will help us streamline the entire process. This next section will explain how to install 3 very common pieces of software, and will also cover the different situations you may encounter while using the two File Systems.
 
-[Click Here](05_VSCode_Node_GIt_install.md) to move to the next section!
+### [⇐ Previous](./04_updating_terminal.md) | [Next ⇒](./05_VSCode_Node_GIt_install.md)

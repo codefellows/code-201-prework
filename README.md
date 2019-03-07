@@ -11,7 +11,9 @@ Pre-work is outlined in ten steps on this page. Note that in Step 3 there are sp
 
 Start on the pre-work as soon as you can and be sure to allow yourself plenty of time to complete it. Expect to spend, **at a minimum**, several evenings and a weekend day or two to get everything completed. Allow yourself more time than you think you will need so that you can take breaks and work at a methodical pace without rushing or trying to cut corners. Detailed time estimates are provided in the following overview.
 
-##### NOTE: If you have taken Code 101 already, skip to #3. The guide in #3 is similar to Code 101's pre-work but contains additional steps you must complete prior to Code 201.
+##### NOTE: If you have taken Code 101 already, skip to #3. 
+
+##### NOTE: Parts of this guide are similar to Code 101's pre-work but contain additional steps you must complete prior to Code 201.
 
 ### Overview of Pre-work Steps *(time to complete per item)*
 
