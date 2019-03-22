@@ -34,7 +34,7 @@ Start on the pre-work as soon as you can and be sure to allow yourself plenty of
 ##### 1. Code 101 *(optional, one full 12-hour day)*
 If you are completely new to coding, consider completing <a href="https://www.codefellows.org/courses/code-101/intro-to-software-development-and-careers-in-tech">Code 101</a> to build your first website using HTML and CSS and to find out if a career in software development is right for you.
 
-##### 2. Ensure your laptop is up to the task of coding *(time for this can vary widely depending upon the age and condition of your laptop)*
+##### 2. Ensure your laptop is up to the task of coding specified in the [Code Fellows Material Requirements](https://www.codefellows.org/courses/code-201/foundations-of-software-development/#material-requirements) *(time for this can vary widely depending upon the age and condition of your laptop)*
 
   - Eliminate all viruses and malware
   - Uses the latest, stable, updated version of its operating system
