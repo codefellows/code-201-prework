@@ -83,7 +83,8 @@ To get started, run the following command.
 nano ~/.bash_profile
 ```
 This will open the file in your command line editor Nano
-Delete anything that’s in the file, then copy and paste this code into the editor:
+
+Copy and paste this code into the editor, **underneath any existing content.**
 
 ```
 #!/usr/bin/env bash
@@ -136,8 +137,10 @@ function parse_git_dirty {
 # PS1 is what actually defines what you command line prompt looks like.
 export PS1="\[\e[31m\]\u\[\e[m\]\[\e[35m\]\w\[\e[m\]\[\e[33m\]\`parse_git_branch\`\[\e[m\]\[\e[32m\]\\$\[\e[m\] "
 ```
-Press `control X` to exit\
-Type `y` to verify changes\
+Press `control X` to exit
+
+Type `y` to verify changes
+
 Hit `enter` to exit Nano
 
 Now close terminal and open a new terminal window for changes to take effect.
