@@ -44,7 +44,7 @@ If you are completely new to coding, consider completing <a href="https://www.co
 
   - [Mac OS X](prework/mac/1_terminal.md)
   - [Ubuntu](prework/ubuntu/1_terminal.md)
-  - [Windows](prework/windows/01_preface.md)
+  - [Windows](prework/windows/02_WSL_Ubuntu_setup.md)
 
 Following completion of these Pre-work assignments, students should:
  - Have a terminal with a Git compatible prompt.
