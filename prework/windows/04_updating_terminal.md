@@ -2,21 +2,15 @@
 
 This section will talk about how to update the Terminal's look and feel, as well as how to edit files in Ubuntu through it's command line editor nano.
 
-Typically you will always be working in the Windows FS, but for this task we need to edit a file that lives on the Ubuntu FS. This means that we need to use nano to update the file, since Windows cannot update the Ubuntu file without causing errors.
-
-At the end, this will add some color to your command line, and your command line will be formatted like this:
-
-`WorkingDirectory[GitBranch GitStatus]$`
-
-IE: about_me[monday-lab x!+]$
+At the end, this will add some color to your command line, and your command line will be formatted for development.
 
 ### Updating the .profile file
 
-In order to change how your terminal looks, we need to add some code to a file that lives in your Ubuntu user's root directory.
-
-1. Open the Ubuntu app and type `ls -a`. You should see a .profile file there. If not, then type `sudo touch .profile`.
+1. Open the Ubuntu app and type `ls -a`. You should see a .profile file there. 
+	- **If not**, then type `sudo touch .profile`.
 2. Type `sudo nano .profile`. This will open the file in the command line editor Nano.
-3. Delete anything that's in the file, then copy and paste this code into the editor. You can paste with right-click:
+3. Copy and paste this code into the editor below any existing text. **This can be tricky**
+	- You can only paste with a single right-click:
 
 ```
 # get current branch in git repo
@@ -95,38 +89,14 @@ cdwr
 
     -NOTE: If your path or username has a space, you can use an backslash escape character to include the space. IE: `/Users/Michael\ Treat/`.
 
-5. After that you're done in this editor, so press `ctrl + x` at the same time to quit. It will ask if you want to save changes. Hit `y` and the editor will save your changes. It will then ask what to name the file. Just hit enter to keep the same name. 
+After that you're done in this editor, so press `ctrl + x`. 
 
-Pin your Ubuntu app to the task bar, close it down, and relaunch it. Congrats, you're done! 
+Hit `y` and the editor will save your changes. 
 
-### Review what just happened
-
-1. In the file you pasted there was a section at the bottom that exports `wr` and sets up the `cdwr` alias. What this does is adds a unique variable and a command to your terminal.
-
-- **$wr :**
-
-If you want to use a relative path, but don't want to go all the way up to the Ubuntu FS and then work down to the Windows FS, you can use the `$wr` variable as a shortcut to the Windows root instead. IE: 
-
-`cd $wr/about_me/scripts`. Instead of:
-
-`cd ~/../../mnt/c/Users/MTreat/Development/about_me/scripts`
-
-This also works with tab completion as well, which is awesome.
-
-- **cdwr :**
-
-Now when you type `cdwr` it will bring you to the root of your Windows User! This makes navigating between the two file systems super easy. 
+Hit enter.
 
 - To navigate to the Ubuntu root, you will type the normal `cd ~`.
-- To navigate to the Windows Root, you will type `cdwr` with NO space!
-
-2. If you decide to add a directory to your Windows User's root to hold all of your work, IE: `/Users/MichaelLeonTreat/Development`, you can come back to this file and update the `export wr` line so that it moves directly into that directory. Just add the name of the directory to the end of the path after your username.
-
-3. In case you ever need it, the Ubuntu FS lives on your Windows FS on the path that looks very similar to this:
-
-`C:\Users\<user>\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs`
-
-4. If you want to create your own custom command line prompt you can check out [bashrcgenerator.com](http://bashrcgenerator.com) or [ezprompt.net](http://ezprompt.net) and use the code that provides instead of the code here. 
+- To navigate to the Windows Root, you will type `cdwr`.
 
 ### Install Tree view
 
@@ -134,8 +104,4 @@ Once that's done we can install a quick awesome command called `tree`. What `tre
 
 Type `sudo apt install tree`. Once that's done, you can type `tree` to see the tree view of the directory that you're currently in! You may have to close and restart your terminal before it will work.
 
-### Installing Software
-
-Before we can dive in and start coding, we should add in some software that will help us streamline the entire process. This next section will explain how to install 3 very common pieces of software, and will also cover the different situations you may encounter while using the two File Systems.
-
-### [⇐ Previous](./04_updating_terminal.md) | [Next ⇒](./05_VSCode_Node_GIt_install.md)
+### [⇐ Previous](./02_WSL_Ubuntu_setup.md) | [Next ⇒](./05_VSCode_Node_GIt_install.md)
