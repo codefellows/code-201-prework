@@ -43,6 +43,7 @@ Now that you have Node installed, you can install Node packages using its packag
 
 You should see a lot of feedback as it installs.
 
+
 # Final Steps
 
 ### VSCode Extensions
@@ -105,5 +106,6 @@ username@user $ code
 Please contact our Admissions Support Instructor: <brad.smialek@codefellows.com> 
 
 ## THE END! 
+
 
 ### [⇐ Previous](3_git.md) | [Back to README ⇒](../../../../)
