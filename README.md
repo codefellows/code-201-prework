@@ -71,7 +71,7 @@ username@user $ code
 
 #### Need help or have questions about computer setup?
 
-Please contact our Admissions Support Instructor: <brad.smialek@codefellows.com> 
+Please contact our Admissions Support Instructor.
 
 If Code 102 self-paced isn't right for you, we understand. Ask about Code 102 (day or night classes) in a classroom setting with guidance. You’ll receive 30 hours of instruction as you blast through the prework for Code 201, while getting a tour of the tools and techniques of modern developers..
 

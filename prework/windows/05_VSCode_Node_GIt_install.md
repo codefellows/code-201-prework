@@ -30,11 +30,15 @@ sudo apt-get install -y nodejs
 We will also install Node on Windows:
 
 1. Visit <https://nodejs.org/en/download/> and download and run the Windows installer.
-2. Open Windows PowerShell (NOT Ubuntu) and run `npm i -g eslint`.
+
+## Eslint
+
+1. Search 'windows powershell' in the start menu and open it.
+2. Run `npm i -g eslint` . When finished close windows powershell.
 
 ## Git
 
- Git is already installed on Ubuntu as it comes built in. VSCode however also uses Git for it's source-control tool to work. But since VSCode is a Windows application, it doesn't know how to use Ubuntu's version of Git. 
+Git is already installed on Ubuntu as it comes built in. VSCode however also uses Git for it's source-control tool to work. But since VSCode is a Windows application, it doesn't know how to use Ubuntu's version of Git. 
 
 1. Visit [git-scm.com](https://git-scm.com/) to download and install Git.
 2. Follow the onscreen instructions.
@@ -51,8 +55,9 @@ We will also install Node on Windows:
 
 The final step here is to add your email and name to the Git config. This will allow you to commit and push things to GitHub. Make sure to include the space after `.email` and `.name`, and always remember to close your quotes ' ' and " ".
 
+1. Close and re-open a new Ubuntu terminal
 1. Type `git config --global user.email 'your email here in single quotes'`.
 1. Type `git config --global user.name 'Your Name In Single Quotes'`.
-1. Type `git config --global core.editor nano`.
+1. Type `git config --global core.editor 'code --wait'`.
 
 ### [⇐ Previous](./04_updating_terminal.md) | [Next ⇒](./06_final_steps.md)

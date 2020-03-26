@@ -8,17 +8,13 @@ To get started, download [VSCode](https://code.visualstudio.com/download), and a
 
 ### Install shell commands
 
-You'll find it useful to open files and directories in VSCode from the terminal, but that functionality needs to be configured first. 
+Open the **Command Palette** (⇧⌘P) and type 'shell command'
 
-Open the **Command Palette** (⇧⌘P) and type 'shell command' to find the **Shell Command: Install 'code' command in PATH** command.
+Then, click the **Shell Command: Install 'code' command in PATH** command.
 
-Restart the terminal for the new $PATH value to take effect. You'll be able to type 'code .' in any folder to start editing files in that folder. If VSCode opens, you're good to go.
-
-If VSCode does not open, try the above process again. If it still does not work, we will remedy it during lab on the first day of class.
+Restart the terminal for the new $PATH value to take effect. 
 
 ### Associate VSCode with Git
-
-It's important to establish a default editor with Git (version control software) so that when Git opens files, that happens in your chosen editor.
 
 Type the following command in your terminal:
 `git config --global core.editor "code --wait"`
@@ -39,112 +35,75 @@ If you run into issues trying to install Node from these steps, please contact y
 
 It will take a few minutes for the download and installation process to complete.
 
-#### Verify the Node installation
-
-Now let's verify that it is installed. Enter the following into your terminal:
-
-`nodejs -e 'console.log("works")'`
-
-You should get a response that says "works". If not, try reinstalling Node again. If you are still having issues, please contact your instructor.
-
 ### Install ESLint
 
-Now that you have Node installed, you can install Node packages using its package manager, **NPM**. Open your terminal (Ubuntu on Windows) and enter:
+Now that you have Node installed, you can install Node packages using its package manager, **NPM**. Open your terminal and enter:
 
 `npm -g i eslint git-open`
 
 You should see a lot of feedback as it installs.
 
-### Verify the installation
+# Final Steps
 
-Now let's verify that ESLint is installed. Enter the following into your terminal:
+### VSCode Extensions
 
-`npm list -g --depth=0`
+1. To add extensions to VSCode, open up VSCode. On the bottom left hand side you will see a cog icon.  Click this and select extensions. A side-bar will slide out and at the top you can search for the listed extensions below and click the green 'Install' button:
 
-You should see ESLint among the list of installed packages. If not, run the previous installation command again.
+  - live server 5.6.1
+  - ESLint 2.0.13
+  - HTML Snippets 0.2.1
+  - HTML Preview 0.2.5
+  - Debugger for Chrome
 
-### What is this linter thing?
+### Verification
 
-Linting is the process of running a program that will analyze code for potential errors, some of which are syntax errors and some of which are style errors. It is an important part of the quality assurance process.
+#### By the time you’ve completed the guide, you should be able to run the following commands in your terminal:
 
-> `lint` was the name originally given to a particular program that flagged some suspicious and non-portable constructs (likely to be bugs) in C language source code. The term is now applied generically to tools that flag suspicious usage in software written in any computer language. [Wikipedia]
+- code --version
+- git --version
+- node --version
+- npm --version
+- eslint --version
+- tree --version
+- echo $PS1
+- cat ~/.gitconfig
+- code
+  - should open VScode
 
-That means the linter is your friend! It will help you write syntactically correct code, so you can catch errors in your text editor, rather than having to navigate to the browser, refresh your page, and search for errors. Faster feedback makes for happier developers (that's you!).
+#### Each command should report a version number of what’s installed (should look *similar* to below example). Should you run across any errors that give you trouble please get a hold of contact below:
 
-### Integrate ESLint with VS Code
-
-Download and install the ESLint extension for VS Code [here](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint). In VS Code, click the gear icon in the lower left corner and select Command Palette. Search for an option named `ESLint: Enable ESlint` and click on it to enable linting within your editor. VS Code will now display errors and warnings in your JavaScript files.
-
-### Git Prompt Setup
-
-To get started, run the following command.
-
+``` 
+username@user $ code --version
+1.40.2
+f359dd69833dd8800b54d458f6d37ab7c78df520
+x64
+username@user $ git --version
+git version 2.2.0
+username@user $ node --version
+v10.16.0
+username@user $ npm --version
+6.9.0
+username@user $ eslint --version
+v6.7.2
+username@user $ tree --version
+tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
+username@user $ echo $PS1
+\[\e[36m\]\A\[\e[m\] \[\e[32m\]\w\[\e[m\] \[\e[37;40m\]`parse_git_branch`\[\e[m\]
+username@user $ cat ~/.gitconfig
+[core]
+	editor = code --wait
+[user]
+	name = yourgithubusername
+	email = youremail
+username@user $ code
+//should open VSCode
 ```
-nano ~/.bash_profile
-```
-This will open the file in your command line editor Nano
+---
 
-Copy and paste this code into the editor, **underneath any existing content.**
+#### Need help or have questions about computer setup?
 
-```
-#!/usr/bin/env bash
-# get current branch in git repo
-function parse_git_branch() {
-	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
-	if [ ! "${BRANCH}" == "" ]
-	then
-		STAT=`parse_git_dirty`
-		echo "[${BRANCH}${STAT}]"
-	else
-		echo ""
-	fi
-}
-# get current status of git repo
-function parse_git_dirty {
-	status=`git status 2>&1 | tee`
-	dirty=`echo -n "${status}" 2> /dev/null | grep "modified:" &> /dev/null; echo "$?"`
-	untracked=`echo -n "${status}" 2> /dev/null | grep "Untracked files" &> /dev/null; echo "$?"`
-	ahead=`echo -n "${status}" 2> /dev/null | grep "Your branch is ahead of" &> /dev/null; echo "$?"`
-	newfile=`echo -n "${status}" 2> /dev/null | grep "new file:" &> /dev/null; echo "$?"`
-	renamed=`echo -n "${status}" 2> /dev/null | grep "renamed:" &> /dev/null; echo "$?"`
-	deleted=`echo -n "${status}" 2> /dev/null | grep "deleted:" &> /dev/null; echo "$?"`
-	bits=''
-	if [ "${renamed}" == "0" ]; then
-		bits=">${bits}"
-	fi
-	if [ "${ahead}" == "0" ]; then
-		bits="*${bits}"
-	fi
-	if [ "${newfile}" == "0" ]; then
-		bits="+${bits}"
-	fi
-	if [ "${untracked}" == "0" ]; then
-		bits="?${bits}"
-	fi
-	if [ "${deleted}" == "0" ]; then
-		bits="x${bits}"
-	fi
-	if [ "${dirty}" == "0" ]; then
-		bits="!${bits}"
-	fi
-	if [ ! "${bits}" == "" ]; then
-		echo " ${bits}"
-	else
-		echo ""
-	fi
-}
+Please contact our Admissions Support Instructor: <brad.smialek@codefellows.com> 
 
-# PS1 is what actually defines what you command line prompt looks like.
-export PS1="\[\e[31m\]\u\[\e[m\]\[\e[35m\]\w\[\e[m\]\[\e[33m\]\`parse_git_branch\`\[\e[m\]\[\e[32m\]\\$\[\e[m\] "
-```
-Press `control X` to exit
-
-Type `y` to verify changes
-
-Hit `enter` to exit Nano
-
-Now close terminal and open a new terminal window for changes to take effect.
-You will have a new prompt with additional Git and color-coded features.
-Don't worry about what this means for now. You will come to understand it's value very soon if you don't already.
+## THE END! 
 
 ### [⇐ Previous](3_git.md) | [Back to README ⇒](../../../../)

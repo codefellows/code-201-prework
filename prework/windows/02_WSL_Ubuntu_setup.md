@@ -2,6 +2,8 @@
 
 **Before you begin check to make sure that you have the [most recent version of Windows 10](https://support.microsoft.com/en-us/help/4028685/windows-10-get-the-update).**
 
+**You are not expected to understand what is taking place as you complete the steps in this guide. It is important that you do not skip ahead.  Please follow the instructions line by line.**
+
 ## Overview  
  
 Windows does not run in a POSIX environment. Much of the software you use as a developer is designed to run in POSIX environments, and many of the web's servers are also running in some POSIX environment. This causes problems because Windows uses different console commands and not all of those commands translate over to POSIX very well.

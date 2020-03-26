@@ -4,7 +4,7 @@ This section will talk about how to update the Terminal's look and feel, as well
 
 At the end, this will add some color to your command line, and your command line will be formatted for development.
 
-### Updating the .profile file
+## Updating the .profile file
 
 1. Open the Ubuntu app and type `ls -a`. You should see a .profile file there. 
 	- **If not**, then type `sudo touch .profile`.
@@ -85,18 +85,31 @@ cdwr
 
 ```
 
-4. After pasting that in, you will need to replace `WIN_USERNAME` with your Windows username, right after `.../Users/`. IE: `/Users/MichaelLeonTreat/`.
+4. After pasting that in, you will need to replace `WIN_USERNAME` with your **Windows username**, right after `.../Users/`. IE: `/Users/MichaelLeonTreat/`.
 
-    -NOTE: If your path or username has a space, you can use an backslash escape character to include the space. IE: `/Users/Michael\ Treat/`.
+    -NOTE: If your path or username has a space, you can use a backslash escape character to include the space. IE: `/Users/Michael\ Treat/`.
+    
+If you are unsure what your Windows username is, then search 'command prompt' in the start menu and open it.
 
-After that you're done in this editor, so press `ctrl + x`. 
+Type the following command `echo %username%` .  The result should be your Windows username. Replace `WIN_USERNAME` with this.
+
+Close the command prompt.
+
+After that you're done in the nano editor, so press `ctrl + x`. 
 
 Hit `y` and the editor will save your changes. 
 
 Hit enter.
 
-- To navigate to the Ubuntu root, you will type the normal `cd ~`.
-- To navigate to the Windows Root, you will type `cdwr`.
+- To navigate to the Ubuntu root, you will type `cd ~` (There is a space between cd and ~)
+
+Now type `pwd` . You should see something like `/home/ubuntuusername`
+
+- To navigate to the Windows root, you will type `cdwr`
+
+Now type `pwd` . You should see something like `/mnt/c/Users/windowsusername`
+
+**From this point on every time you close and re-open your Ubuntu terminal you will be starting in your Windows root.  This is where you will be working**
 
 ### Install Tree view
 
