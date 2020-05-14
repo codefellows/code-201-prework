@@ -166,11 +166,6 @@ username@user $ cat ~/.gitconfig
 username@user $ code
 //should open VSCode
 ```
----
-
-#### Need help or have questions about computer setup?
-
-Please contact our Admissions Support Instructor: <brad.smialek@codefellows.com> 
 
 ## THE END! 
 
